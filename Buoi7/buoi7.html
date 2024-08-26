@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr 2fr); */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: 100px 100px 100px; */
+    /*grid-template-rows: 100px 100px 100px / 1fr 1fr 1fr*/;
+    /* grid-gap: 20px; */
+    grid-template-areas:
+        'header header header'
+        'main main sidebar'
+        'footer footer footer';
+}
+.item {
+    /* height: 100px;
+    width: 100px; */
+    background-color: aqua;
+    border: 1px solid black;
+}
+.item1{
+    /* grid-column: 2/3; */
+    /* grid-area: 1/1 /2/3; */
+    grid-area: 1/ span 3;
+}
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+</style>
+<body>
+    <div class="container">
+        <!-- <div class="item item1">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div> -->
+        <!-- <div class="item">Item</div>
+        <div class="item">Item</div> --> 
+        <div class="item header">Item</div>
+        <div class="item main">Item</div>
+        <div class="item sidebar">Item</div>
+        <div class="item footer">Item</div>
+    </div>
+</body>
+</html>
