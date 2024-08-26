@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            margin: 20px;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 2fr;
+        }
+        .container1{
+            display: grid;
+            margin: 20px;
+            grid-template-columns: 1fr 3fr;
+            margin-top: 50px;
+            border: 1px solid rgb(171, 169, 169);
+        }
+        .container2{
+            display: grid;
+            margin: 20px;
+            grid-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .item{
+            height: 250px;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="https://clauem2.arrowtheme.com/media/mgs/fbuilder/promobanners/5/_/5.png" alt="">
+            <p style="font-size: 36px; margin-top: -150px; margin-left: 20px;">Orange juice</p>
+            <h2 style="font-size: 36px; margin-left: 20px; margin-top: -30px;">
+                40% Flat
+            </h2>
+            <a href="" style="color: black; font-size: 18px; margin-left: 20px; margin-top: -20px; position: absolute;">
+                <b>Shop now</b>
+            </a>
+        </div>
+        <div>
+            <img style="width: 100%; height: 207px;" src="https://clauem2.arrowtheme.com/media/mgs/fbuilder/promobanners/6/a/6a.png" alt="">
+            <p style="font-size: 36px; margin-top: -150px; margin-left: 20px;">Healthy Organic Vegetables</p>
+            <h2 style="font-size: 36px; margin-left: 20px; margin-top: -30px;">
+                Sale 20% Off
+            </h2>
+            <a href="" style="color: black; font-size: 18px; margin-left: 20px; margin-top: -20px; position: absolute;">
+                <b>Shop now</b>
+            </a>
+        </div>
+    </div>
+    <div class="container1">
+        <div style="border-right: 1px solid rgb(171, 169, 169); margin-left: 50px;">
+            <h3 style="margin-top: 40px;">Food</h3>
+            <p>Fast food</p>
+            <p>Vegan food</p>
+            <p>Meat food</p>
+            <p>Sweat food</p>
+            <br>
+            <a href="" style="color: black; font-size: 18px;">
+                <b>All Category</b>
+            </a>
+        </div>
+        <div class="container2";>
+            <div>
+                <img class="item" src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_76.png" alt="">
+                <h4>Grilled sheep</h4>
+                <p style="color: #929191;">$50.00</p>
+            </div>
+            <div>
+                <img class="item" src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_108.png" alt="">
+                <h4>Salmon florentine</h4>
+                <p style="color: #929191;">$20.00</p>
+            </div>
+            <div>
+                <img class="item" src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_107.png" alt="">
+                <h4>Turkey</h4>
+                <p style="color: #929191;">$50.00</p>
+            </div>
+            <div>
+                <img class="item" src="https://clauem2.arrowtheme.com/media/catalog/product/cache/de6bec506494940b8fbc8b6822d59d20/i/m/image_104_1.png" alt="">
+                <h4>Goose breast</h4>
+                <p style="color: #929191;">$15.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
